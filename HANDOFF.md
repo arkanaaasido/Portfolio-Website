@@ -37,3 +37,5 @@
 ## Progress log
 - handoff created; no edits to copy yet.
 - Edits applied via a script on the decoded template (json round-trip is byte-safe; keep `</` -> `<\u002F`). Deep copy on sub-pages (Visionaries / Ciputra / Bootcamp / Dempo) is still video-heavy and could be rebalanced next.
+- Vercel project connected to GitHub (Oct 2026). Preview deployments build on every push to a branch; production = main.
+- Contact section added to every page; nav "get in touch" scrolls to it in place (router handles href="#contact").
