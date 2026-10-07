@@ -39,3 +39,5 @@
 - Edits applied via a script on the decoded template (json round-trip is byte-safe; keep `</` -> `<\u002F`). Deep copy on sub-pages (Visionaries / Ciputra / Bootcamp / Dempo) is still video-heavy and could be rebalanced next.
 - Vercel project connected to GitHub (Oct 2026). Preview deployments build on every push to a branch; production = main.
 - Contact section added to every page; nav "get in touch" scrolls to it in place (router handles href="#contact").
+- Oct 2026: cold-start shell (centred AA, no "Unpacking..."), curtain + staggered hero entrance; page transitions now pure CSS (`[data-fx-page]` aaPageIn, no JS flyIn) - fixes the blink. New Skills page (route `Skills`, nav link, site-fx ORDER). Stats added to showreel (600K+), Trakindo (7), Visionaries (12), YouTube ("Solo" placeholder - replace with a real number). Trakindo now 7 modules; "Adobe" removed. Articulate Storyline logo missing (placeholder "St" tile) - drop assets-web/logos/articulate-storyline.svg and update the Skills page tile.
+- Build script for these edits lived in /tmp (not kept); edit the decoded template string the same way as before.
