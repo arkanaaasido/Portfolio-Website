@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arkana-asido-portfolio-966bb5a8-385.vercel.app/sitemap.xml

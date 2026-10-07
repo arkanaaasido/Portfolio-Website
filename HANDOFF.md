@@ -27,12 +27,17 @@
 3. User attached a "20 things to do before launching your website" image. Decide which points apply, apply them, skip the rest.
 
 ### Status
-- [ ] reference site read
-- [ ] copy extracted + audited
-- [ ] copy edits applied
-- [ ] launch checklist applied
-- [ ] tested + copied to Template folder
-(see "Progress log" below)
+- [~] reference site read - dwihardiono.com is blocked by the cloud proxy; style inferred (short, plain, concrete, no filler)
+- [x] copy extracted + audited
+- [x] copy edits applied (hero, tags, meta/title, about, card blurbs, CTA); narrative rebalanced to operations / events / communications / content / data
+- [x] launch checklist (20 items, image received): DONE = 4 HTTPS (HSTS + security headers in vercel.json), 6 meta, 7 social preview (og:image + alt), 8 favicon, 9 sitemap.xml + robots.txt, 10 alt text (all 37 imgs have it), 11/12 images (all <250KB), 13 contrast (#6B6A62 -> #8C8B82), 14 mobile, 15 routing is hash-based so no 404 route exists, 16 links (internal .dc.html links handled by router), 20 single CTA. SKIPPED (no cookies/forms/backend/secrets): 1,2 privacy+terms, 3 secrets, 5 cookie banner, 17 form validation, 18 spam. OPEN: 19 analytics (enable Vercel Web Analytics in dashboard if wanted; then add a one-line privacy note). Note sitemap/canonical use the vercel.app URL - update if a custom domain is added.
+- Privacy & usage page added (route `Privacy`, footer link on home). Covers checklist 1+2. Cookie banner (5) deliberately skipped: no cookies.
+- [ ] tested on mobile + copied to Template folder + deployed
 
 ## Progress log
-- (start) handoff created; no edits to copy yet.
+- handoff created; no edits to copy yet.
+- Edits applied via a script on the decoded template (json round-trip is byte-safe; keep `</` -> `<\u002F`). Deep copy on sub-pages (Visionaries / Ciputra / Bootcamp / Dempo) is still video-heavy and could be rebalanced next.
+- Vercel project connected to GitHub (Oct 2026). Preview deployments build on every push to a branch; production = main.
+- Contact section added to every page; nav "get in touch" scrolls to it in place (router handles href="#contact").
+- Oct 2026: cold-start shell (centred AA, no "Unpacking..."), curtain + staggered hero entrance; page transitions now pure CSS (`[data-fx-page]` aaPageIn, no JS flyIn) - fixes the blink. New Skills page (route `Skills`, nav link, site-fx ORDER). Stats added to showreel (600K+), Trakindo (7), Visionaries (12), YouTube ("Solo" placeholder - replace with a real number). Trakindo now 7 modules; "Adobe" removed. Articulate Storyline logo missing (placeholder "St" tile) - drop assets-web/logos/articulate-storyline.svg and update the Skills page tile.
+- Build script for these edits lived in /tmp (not kept); edit the decoded template string the same way as before.
