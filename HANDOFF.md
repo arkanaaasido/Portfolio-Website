@@ -31,6 +31,7 @@
 - [x] copy extracted + audited
 - [x] copy edits applied (hero, tags, meta/title, about, card blurbs, CTA); narrative rebalanced to operations / events / communications / content / data
 - [x] launch checklist (20 items, image received): DONE = 4 HTTPS (HSTS + security headers in vercel.json), 6 meta, 7 social preview (og:image + alt), 8 favicon, 9 sitemap.xml + robots.txt, 10 alt text (all 37 imgs have it), 11/12 images (all <250KB), 13 contrast (#6B6A62 -> #8C8B82), 14 mobile, 15 routing is hash-based so no 404 route exists, 16 links (internal .dc.html links handled by router), 20 single CTA. SKIPPED (no cookies/forms/backend/secrets): 1,2 privacy+terms, 3 secrets, 5 cookie banner, 17 form validation, 18 spam. OPEN: 19 analytics (enable Vercel Web Analytics in dashboard if wanted; then add a one-line privacy note). Note sitemap/canonical use the vercel.app URL - update if a custom domain is added.
+- Privacy & usage page added (route `Privacy`, footer link on home). Covers checklist 1+2. Cookie banner (5) deliberately skipped: no cookies.
 - [ ] tested on mobile + copied to Template folder + deployed
 
 ## Progress log
