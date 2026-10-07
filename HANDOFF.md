@@ -27,12 +27,12 @@
 3. User attached a "20 things to do before launching your website" image. Decide which points apply, apply them, skip the rest.
 
 ### Status
-- [ ] reference site read
-- [ ] copy extracted + audited
-- [ ] copy edits applied
-- [ ] launch checklist applied
-- [ ] tested + copied to Template folder
-(see "Progress log" below)
+- [~] reference site read - dwihardiono.com is blocked by the cloud proxy; style inferred (short, plain, concrete, no filler)
+- [x] copy extracted + audited
+- [x] copy edits applied (hero, tags, meta/title, about, card blurbs, CTA); narrative rebalanced to operations / events / communications / content / data
+- [~] launch checklist - the "20 things" image is not in the repo; applied what is knowable (title, description, og/twitter, favicon, lang, robots.txt). Still open: custom domain + sitemap, analytics, 404 page, og:image size check, real Trakindo completion figures
+- [ ] tested on mobile + copied to Template folder + deployed
 
 ## Progress log
-- (start) handoff created; no edits to copy yet.
+- handoff created; no edits to copy yet.
+- Edits applied via a script on the decoded template (json round-trip is byte-safe; keep `</` -> `<\u002F`). Deep copy on sub-pages (Visionaries / Ciputra / Bootcamp / Dempo) is still video-heavy and could be rebalanced next.
